@@ -83,3 +83,45 @@ int operator +=( , ){  return   };   //传入两个类的实例
 （2）调用： 实例化类；
          指针名 指针变量名＝&类::函数名；
          (类实例.*指针变量名)(传入参数)；   
+
+————————————————————
+引用：可狭义地理解为变量的内存地址传递引用，与指针类似，但指针需开辟指针内存，而引用则直接对变量对应的内存地址内的内容进行操作。
+例如： 
+void test(int &a)   //定义了a的引用。
+{
+cout<<&a<<“  ”<<a;   //输出 &a为a的地址；a为a的值。
+
+}
+
+int main(){
+int a =1;
+cout<<&a<<“  ”<<a;       
+
+test(a);
+
+
+}    //运行结果两句输出相同，都为输出了a的地址及a的值。
+
+————————————————
+list：
+（1）定义：std::list<std::string> l;  //定义了表里元素的类型。
+(2)遍历： for(std::list<std::string>::iterator it = l.begin();it!=l.end();it++)
+{
+       std::cout<<*it<<std::endl;
+
+}
+
+——————————————————
+map：
+(1) 定义: std::map<std::string,std::string> m;
+(2)使用:  m[“key”]=“value”;  //类似字典。	
+
+
+——————————————————
+对文件操作
+（1）头文件: #include <fstream>
+(2)写  ofstream out(“data.txt”);  //输出到data.txt
+out<<“nihao\n”;	    //添加文本到data.txt；
+（3）读   ifstream read(“data.txt”);
+  string b;
+read>>b;
