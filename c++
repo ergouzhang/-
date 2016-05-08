@@ -77,3 +77,5 @@ cout<<p<<endl<<*p;  //输出为&a［0］和1.
 char a[10]={‘a’,’b’};
 char *p=a;
 cout<<p<<endl<<*p; //输出为ab和a.
+
+________

@@ -134,4 +134,11 @@ out<<“nihao\n”;	    //添加文本到data.txt；
   string b;
 read>>b;
 ————————————————————————
+vector<>遍历：
+vector<int> arr(12);
+vector<int> :: iterator iter;
+for(iter=arr.begin();iter!=arr.end();iter++ )
+{ int& value =*iter;
+printf(“%d”,value);
 
+}
