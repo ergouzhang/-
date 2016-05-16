@@ -29,7 +29,7 @@ ________________
 p86
 string类型：
 （1）string类型需要引入头文件 #include <string>;
-(2)string 类型的元素可以直接赋值给另一个string类型，也可以相加；
+ (2)string 类型的元素可以直接赋值给另一个string类型，也可以相加；
 （3）输入：可使用cin>>string   //空格被视为完成。
    getline(cin,string) //效果等同于 cin.getline();
 

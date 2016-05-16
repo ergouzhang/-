@@ -1,0 +1,30 @@
+1. 输入输出
+(1)scanf的格式化字符串中间不能加\n。
+scanf(“%d\n”,&a)——>scanf(“%d”,&a)
+
+(2)
+double a=0.0;
+scanf(“%f”,&a)——>scanf(“%lf”,&a)
+
+(3)
+scanf接受整数时，只能用int型变量，不能用short/char型。
+(4)
+scanf连续接受多个变量时，需要用‘,’隔开.输入时也需要用’,’隔开。
+scanf(“%d%d”,&a,&b)——>scanf(“%d,%d”,&a,&b)
+(5)
+输出使用0填补至4位：pritnf(“%04d”,a)
+(6)
+输出小数位控制： printf(“%.1f”,32.10000);
+
+
+2.数组
+(1)sizeof(a[n]) 只计算数组内有值的元素占用的空间
+(2)使用scanf()对数组输入：scanf(“%d”,&a[0]);
+
+
+3. 字符、字符串
+(1)char str[8]=“hi”;
+  sizeof(str)=8.
+(2) 转义符
+char str[]=“A movie named \”Super china\””;
+(3)
