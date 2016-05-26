@@ -119,7 +119,7 @@ void push3(listStack *s, EmelentType e)
     listNode *p=(listNode *)malloc(sizeof(listNode));
     p->data=e;
     p->next=s->top;
-    s=p;
+    s->top=p;
     
 }
 
