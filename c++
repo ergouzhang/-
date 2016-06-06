@@ -90,3 +90,22 @@ tm->tm_min;//min
 tm->tm_month//从0开始
 
 time_t tt=mk(tm)//由年－月－日－时－分－秒转换为秒
+
+———————
+12
+文件操作
+（1）写入
+FILE* fp=fopen(“全路径”,”wb”); //打开
+fwrite(buf,1,sizeof(buf),fp)  //写入
+
+
+(2)读取
+FILE *fp=fopen(“全路径”,”rb”);
+size_t read=fread(buf,1,读取字节,fp);
+(3)随机读取
+fseek(fp,间隔字节,SEEK_SET);  SEEK_SET:从头／ SEEK_END：尾
+（4） 按行写入、读取
+
+fprint(fp,”port=%d\n”,port);  //将port字符串格式化后输入到文件中
+
+fgets(buf,128,fp); //读取直到发现 ／n 
