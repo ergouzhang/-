@@ -109,3 +109,20 @@ fseek(fp,间隔字节,SEEK_SET);  SEEK_SET:从头／ SEEK_END：尾
 fprint(fp,”port=%d\n”,port);  //将port字符串格式化后输入到文件中
 
 fgets(buf,128,fp); //读取直到发现 ／n 
+
+13
+运算符重载
+（1）＋
+className operator +(const className& other)
+(2)[]
+element& operator[](int index)
+(3) ==
+bool operator ==(const className& other)
+(4)() 类型转换
+operator Type() // Type为目标类型
+｛
+…
+return result;
+｝
+
+(5)
