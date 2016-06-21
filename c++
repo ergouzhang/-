@@ -125,4 +125,16 @@ operator Type() // Type为目标类型
 return result;
 ｝
 
-(5)
+(5)>
+bool operator >(const className& other)
+
+
+14 vector
+(1)创建
+#include<vector>
+std::vector<className> arr(capacity,defauleValue);
+(2)使用
+arr.clear(); //使用前清空,szie=0;
+arr.push_back(value);
+arr.resize(capacity);//重新申请大小
+
