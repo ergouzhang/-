@@ -144,7 +144,7 @@ void QSort(ElementType A[],int left, int right)
         {/*将序列中比基准小的移到基准左边，大的移到右边*/
             while (A[++Low]<Pivot)
             {}
-            while (A[--High])
+            while (A[--High]>Pivot)
             {}
             if (Low<High)
             {
